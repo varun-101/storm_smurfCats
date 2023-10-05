@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Feedback</h1>
+    </header>
+    <section class="feedback-form">
+        <form>
+            <label for="employee-name">Name:</label>
+            <input type="text" id="employee-name" name="employee-name" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department">
+
+            <label for="feedback-category">Feedback Category:</label>
+            <select id="feedback-category" name="feedback-category">
+                <option value="performance">Performance</option>
+                <option value="work-environment">Work Environment</option>
+                <option value="communication">Communication</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="feedback-text">Feedback:</label>
+            <textarea id="feedback-text" name="feedback-text" rows="4" required></textarea>
+
+            <label for="anonymous">Do you want to be anonymous? :</label>
+            <input type="checkbox" id="anonymous" name="anonymous">
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</body>
+</html>
+

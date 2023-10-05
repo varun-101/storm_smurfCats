@@ -1,0 +1,268 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: #c1f7f5;
+    
+}
+.nav{
+  
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  background: #c1f7f5;
+  padding: 15px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+}
+.nav-links{
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.nav-links li{
+  list-style: none;
+  margin: 0px 12px;
+  
+   
+}
+.nav-links li a{
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.nav-links li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+img{
+    border-radius: 5%;
+}
+
+.btn{
+    position: relative;
+    left: 8%;
+    width: 75%;
+}
+.dashboard{
+    text-decoration: none;
+    color: #fff;
+}
+.intro{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   width: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   background-color: white;
+   border-radius: 15px;
+   height: 700px;
+
+}
+.deva{
+    background-color: white;
+    height: 700px;
+
+}
+
+.devatxt{
+    padding-top: 0;
+    
+}
+
+.space{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+.dashboard{
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard p{
+    text-align: right;
+    margin-left: 30%;
+}
+
+#contain{
+    background: #c1f7f5;
+}
+
+
+
+#dash-img{
+    height: 300px;
+    float: left;
+    
+}
+
+#page{
+    background: #c1f7f5;
+}
+
+#dashboard{
+    
+    position: relative;
+    left: 10%;
+}
+
+.pngbg{
+  
+    width: 80%;
+    border-radius: 15px;
+
+}
+span{
+    color:  #0defe8;
+}
+
+#survey{
+    margin-top: 50px;
+  
+}
+
+.surv{
+    padding: 10%;
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 500px;
+}
+
+#feedback{
+    position: relative;
+    left: 10%;
+}
+
+#feed-img{
+    height: 300px;
+    float: left;
+}
+
+.big{
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    left: 450px;
+}
+
+
+/*<button class="button-28" role="button">Button 28</button>*/
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: black;
+  background-color: #0defe8;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.foot{
+    margin-top: 60px;
+}
+
+.pngbg p{
+  text-align: right;
+}
+
+.leed{
+  width: 5%;
+  position: fixed;
+  color: black;
+}
